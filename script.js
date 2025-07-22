@@ -34,10 +34,8 @@ function playRound(humanChoice, computerChoice) {
     result.textContent = message;
     resultsDiv.appendChild(result);
 
-    // Update scoreboard
     scoreDisplay.textContent = `Score: You - ${humanScore} | Computer - ${computerScore}`;
 
-    // Check for game over
     if (humanScore === 5 || computerScore === 5) {
         const gameOver = document.createElement("div");
         gameOver.textContent = humanScore === 5 ? "Game over! You win!" : "Game over! Computer wins!";
